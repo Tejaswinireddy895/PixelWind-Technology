@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #111;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+.gradient-text {
+  background: linear-gradient(135deg,#1E6BFF,#0044cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
