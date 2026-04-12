@@ -1,4 +1,3 @@
-"use client";
 import { SiOpenai, SiPython, SiTensorflow, SiPytorch, SiHuggingface, SiLangchain, SiFastapi, SiDocker } from "react-icons/si";
 import { BrainCircuit, Sparkles, MessageSquare, Image, FileText, Globe, HeartPulse, Briefcase } from "lucide-react";
 import ServiceTemplate from "@/components/ServiceTemplate";

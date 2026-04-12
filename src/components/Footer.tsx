@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="text-white font-bold text-xs mb-4 uppercase tracking-widest">Training & Staffing</h4>
             <ul className="space-y-2">
               {CORE_SERVICES.map((s) => (
-                <li key={s.id}><Link href={s.href} prefetch={true} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
+                <li key={s.id}><Link href={s.href} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="text-white font-bold text-xs mb-4 uppercase tracking-widest">Technology</h4>
             <ul className="space-y-2">
               {TECH_SERVICES.map((s) => (
-                <li key={s.id}><Link href={s.href} prefetch={true} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
+                <li key={s.id}><Link href={s.href} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -53,15 +53,15 @@ export default function Footer() {
             <h4 className="text-white font-bold text-xs mb-4 uppercase tracking-widest">AI & Data</h4>
             <ul className="space-y-2">
               {AI_SERVICES.map((s) => (
-                <li key={s.id}><Link href={s.href} prefetch={true} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
+                <li key={s.id}><Link href={s.href} className="text-sm hover:text-brand transition-colors">{s.title}</Link></li>
               ))}
             </ul>
             <h4 className="text-white font-bold text-xs mb-4 mt-6 uppercase tracking-widest">Company</h4>
             <ul className="space-y-2">
-              <li><Link href="/about" prefetch={true}              className="text-sm hover:text-brand transition-colors">About Us</Link></li>
-              <li><Link href="/contact" prefetch={true}             className="text-sm hover:text-brand transition-colors">Contact</Link></li>
-              <li><Link href="/privacy-policy" prefetch={true}      className="text-sm hover:text-brand transition-colors">Privacy Policy</Link></li>
-              <li><Link href="/terms-and-conditions" prefetch={true}className="text-sm hover:text-brand transition-colors">Terms &amp; Conditions</Link></li>
+              <li><Link href="/about"              className="text-sm hover:text-brand transition-colors">About Us</Link></li>
+              <li><Link href="/contact"             className="text-sm hover:text-brand transition-colors">Contact</Link></li>
+              <li><Link href="/privacy-policy"      className="text-sm hover:text-brand transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms-and-conditions" className="text-sm hover:text-brand transition-colors">Terms &amp; Conditions</Link></li>
             </ul>
           </div>
 
@@ -79,8 +79,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-3 pt-8 text-xs">
           <p>© {new Date().getFullYear()} Pixelwind Technologies. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link href="/privacy-policy" prefetch={true}      className="hover:text-brand transition-colors">Privacy Policy</Link>
-            <Link href="/terms-and-conditions" prefetch={true} className="hover:text-brand transition-colors">Terms &amp; Conditions</Link>
+            <Link href="/privacy-policy"      className="hover:text-brand transition-colors">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-brand transition-colors">Terms &amp; Conditions</Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-"use client";
 import { SiFigma, SiSketch, SiInvision, SiFramer, SiWebflow, SiNotion } from "react-icons/si";
 import { FaPenNib, FaStickyNote } from "react-icons/fa";
 import { Palette, Eye, MousePointer, LayoutDashboard, Smartphone, Globe, ShoppingBag, HeartPulse } from "lucide-react";

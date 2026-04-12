@@ -1,4 +1,3 @@
-"use client";
 import { SiEthereum, SiSolidity, SiWeb3Dotjs, SiIpfs, SiRust, SiPython, SiNodedotjs, SiReact } from "react-icons/si";
 import { Link2, Shield, Banknote, Globe, HeartPulse, ShoppingBag, Truck, Factory } from "lucide-react";
 import ServiceTemplate from "@/components/ServiceTemplate";

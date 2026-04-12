@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { CORE_SERVICES, TECH_SERVICES } from "@/data/servicesData";
 import { FiArrowRight } from "react-icons/fi";
@@ -8,7 +7,6 @@ import { FiArrowRight } from "react-icons/fi";
 const TABS = [{ label:"Training & Staffing", key:"core" },{ label:"Technology Services", key:"tech" }];
 
 export default function ServicesSection() {
-  const router = useRouter();
   const [active, setActive] = useState(0);
   const services = active === 0 ? CORE_SERVICES : TECH_SERVICES;
   return (
@@ -29,7 +27,7 @@ export default function ServicesSection() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((svc) => (
-            <Link key={svc.id} href={svc.href} prefetch={true} onMouseEnter={() => router.prefetch(svc.href)}
+            <Link key={svc.id} href={svc.href}
               className="group bg-white border border-gray-200 rounded-2xl p-6 hover:border-brand hover:shadow-xl hover:-translate-y-1.5 transition-all duration-200">
               <div className="text-4xl mb-4">{svc.emoji}</div>
               <h3 className="font-bold text-gray-900 text-sm mb-2 group-hover:text-brand transition-colors">{svc.title}</h3>

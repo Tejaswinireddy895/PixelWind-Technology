@@ -1,4 +1,3 @@
-"use client";
 import { SiPython, SiReact, SiMysql, SiDocker, SiGit, SiJavascript } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { GraduationCap, Briefcase, HeartPulse, Globe, Banknote, ShoppingBag, Truck, Factory } from "lucide-react";

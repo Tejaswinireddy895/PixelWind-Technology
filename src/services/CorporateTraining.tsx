@@ -1,4 +1,3 @@
-"use client";
 import { SiZoom, SiSlack, SiNotion, SiTrello, SiAsana } from "react-icons/si";
 import { FaGoogle, FaMicrosoft, FaStickyNote } from "react-icons/fa";
 import { Briefcase, Users, TrendingUp, Globe, Factory, HeartPulse, ShoppingBag, Banknote } from "lucide-react";

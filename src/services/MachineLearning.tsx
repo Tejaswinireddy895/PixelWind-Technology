@@ -1,4 +1,3 @@
-"use client";
 import { SiPython, SiTensorflow, SiPytorch, SiScikitlearn, SiKeras, SiApachespark, SiDocker } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { BrainCircuit, TrendingUp, ShoppingBag, HeartPulse, Factory, Globe, Truck, BarChart } from "lucide-react";

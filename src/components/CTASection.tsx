@@ -1,11 +1,8 @@
-"use client";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { BsShieldCheck } from "react-icons/bs";
 
 export default function CTASection() {
-  const router = useRouter();
   return (
     <section className="bg-gray-50 py-24">
       <div className="max-w-5xl mx-auto px-6">
@@ -23,10 +20,10 @@ export default function CTASection() {
               Join 500+ professionals who have already accelerated their growth with Pixelwind Technologies.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
-              <Link href="/contact" prefetch={true} className="flex items-center gap-2 bg-white text-brand font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all shadow-xl hover:scale-[1.02]">
+              <Link href="/contact" className="flex items-center gap-2 bg-white text-brand font-bold px-8 py-4 rounded-full hover:bg-gray-100 transition-all shadow-xl hover:scale-[1.02]">
                 Start Your Journey <FiArrowUpRight size={16}/>
               </Link>
-              <Link href="/it-training" prefetch={true} onMouseEnter={() => router.prefetch('/it-training')} className="flex items-center gap-2 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-all">
+              <Link href="/it-training" className="flex items-center gap-2 border-2 border-white/30 text-white font-bold px-8 py-4 rounded-full hover:bg-white/10 transition-all">
                 View All Programs
               </Link>
             </div>

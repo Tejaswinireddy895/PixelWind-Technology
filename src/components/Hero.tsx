@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import { BsShieldCheck } from "react-icons/bs";
@@ -14,13 +14,29 @@ const SLIDES = [
 export default function Hero() {
   const [cur, setCur] = useState(0);
   const [fading, setFading] = useState(false);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const curRef = useRef(0);
+
+  const scheduleNext = (nextIndex: number) => {
+    setFading(true);
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    timeoutRef.current = setTimeout(() => {
+      curRef.current = nextIndex;
+      setCur(nextIndex);
+      setFading(false);
+    }, 300);
+  };
 
   useEffect(() => {
-    const t = setInterval(() => {
-      setFading(true);
-      setTimeout(() => { setCur((c) => (c + 1) % SLIDES.length); setFading(false); }, 300);
+    scheduleNext((curRef.current + 1) % SLIDES.length);
+    intervalRef.current = setInterval(() => {
+      scheduleNext((curRef.current + 1) % SLIDES.length);
     }, 5000);
-    return () => clearInterval(t);
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
   }, []);
 
   const s = SLIDES[cur];
@@ -45,7 +61,7 @@ export default function Hero() {
               <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-5">{s.title}</h1>
               <p className="text-gray-500 text-base leading-relaxed mb-8">{s.sub}</p>
               <div className="flex gap-3 flex-wrap">
-                <Link href="/contact" prefetch={true} className="flex items-center gap-2 bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition-all shadow-md shadow-brand/20">
+                <Link href="/contact" className="flex items-center gap-2 bg-brand text-white font-semibold px-6 py-3 rounded-xl hover:bg-brand-dark transition-all shadow-md shadow-brand/20">
                   Book a Consultation <FiArrowUpRight size={16} />
                 </Link>
                 <Link href="#services" className="flex items-center gap-2 border-2 border-brand text-brand font-semibold px-6 py-3 rounded-xl hover:bg-brand-light transition-all">
@@ -82,7 +98,7 @@ export default function Hero() {
         {/* Dots */}
         <div className="flex gap-3 justify-center mt-6 flex-wrap">
           {SLIDES.map((sl, i) => (
-            <button key={i} onClick={() => { setFading(true); setTimeout(() => { setCur(i); setFading(false); }, 300); }}
+            <button key={i} onClick={() => scheduleNext(i)}
               className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-medium border-2 transition-all ${i === cur ? "bg-brand border-brand text-white" : "bg-white border-gray-200 text-gray-600 hover:border-brand hover:text-brand"}`}>
               <span className={`w-1.5 h-1.5 rounded-full ${i === cur ? "bg-white" : "bg-brand"}`} />
               {sl.tag}

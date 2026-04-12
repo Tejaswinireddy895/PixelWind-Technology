@@ -1,4 +1,3 @@
-"use client";
 import { SiGooglecloud, SiDocker, SiKubernetes, SiTerraform, SiJenkins, SiGithubactions } from "react-icons/si";
 import { FaAws, FaMicrosoft } from "react-icons/fa";
 import { Cloud, Server, Shield, Zap, Database, Globe, Lock, BarChart } from "lucide-react";

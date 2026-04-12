@@ -1,4 +1,3 @@
-"use client";
 import { SiGoogleanalytics, SiSnowflake, SiDbt, SiApachespark, SiPython } from "react-icons/si";
 import { FaChartBar, FaChartLine, FaMicrosoft } from "react-icons/fa";
 import { BarChart, TrendingUp, ShoppingBag, HeartPulse, Factory, Globe, Banknote, Database } from "lucide-react";

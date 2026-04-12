@@ -1,4 +1,3 @@
-"use client";
 import { SiGithub, SiNotion, SiZoom, SiHubspot, SiSlack, SiTrello } from "react-icons/si";
 import { FaLinkedin, FaGoogle } from "react-icons/fa";
 import { GraduationCap, Briefcase, HeartPulse, Globe, Banknote, Factory, ShoppingBag, Truck } from "lucide-react";

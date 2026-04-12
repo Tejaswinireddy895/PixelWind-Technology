@@ -1,4 +1,3 @@
-"use client";
 import { SiGoogleads, SiGoogleanalytics, SiMailchimp, SiHubspot, SiMeta, SiSemrush, SiWordpress, SiCanva } from "react-icons/si";
 import { TrendingUp, Globe, ShoppingBag, UsersRound, Megaphone, Mail, Search, BarChart } from "lucide-react";
 import ServiceTemplate from "@/components/ServiceTemplate";

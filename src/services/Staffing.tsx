@@ -1,4 +1,3 @@
-"use client";
 import { SiIndeed, SiGlassdoor, SiSalesforce, SiZoho, SiHubspot, SiSlack, SiNotion } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { UserCheck, Briefcase, Factory, HeartPulse, Globe, Banknote, ShoppingBag, Truck } from "lucide-react";

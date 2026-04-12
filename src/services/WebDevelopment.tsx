@@ -1,4 +1,3 @@
-"use client";
 import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb, SiMysql, SiExpress, SiGithub, SiTypescript, SiVercel } from "react-icons/si";
 import { FaDatabase, FaServer } from "react-icons/fa";
 import { Globe, HeartPulse, BookText, ShoppingBag, UsersRound, Utensils, Truck, Home } from "lucide-react";

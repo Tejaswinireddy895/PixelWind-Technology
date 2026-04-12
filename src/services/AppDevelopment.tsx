@@ -1,4 +1,3 @@
-"use client";
 import { SiFlutter, SiReact, SiKotlin, SiSwift, SiFirebase, SiAndroid, SiApple, SiGoogleplay } from "react-icons/si";
 import { Smartphone, Globe, HeartPulse, ShoppingBag, Utensils, Truck, GraduationCap, Banknote } from "lucide-react";
 import ServiceTemplate from "@/components/ServiceTemplate";

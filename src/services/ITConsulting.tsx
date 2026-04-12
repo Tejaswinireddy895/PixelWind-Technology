@@ -1,4 +1,3 @@
-"use client";
 import { SiGooglecloud, SiJira, SiConfluence, SiSalesforce } from "react-icons/si";
 import { FaAws, FaMicrosoft, FaChartBar, FaChartLine } from "react-icons/fa";
 import { Lightbulb, Shield, BarChart, Globe, Factory, HeartPulse, Banknote, ShoppingBag } from "lucide-react";

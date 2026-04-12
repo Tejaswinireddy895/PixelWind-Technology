@@ -1,5 +1,3 @@
-"use client";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -39,7 +37,6 @@ const AI_CARDS = [
 ];
 
 export default function SmartTechSection() {
-  const router = useRouter();
   return (
     <section className="bg-gray-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -53,7 +50,7 @@ export default function SmartTechSection() {
             <p className="text-gray-500 text-base leading-relaxed mb-8">
               We craft and enhance training programs using AI, ML, and Data Science to deliver speed, insight, and innovation for every learner.
             </p>
-            <Link href="/geneai" prefetch={true} onMouseEnter={() => router.prefetch('/geneai')} className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:gap-3 transition-all">
+            <Link href="/geneai" className="inline-flex items-center gap-2 text-brand font-semibold text-sm hover:gap-3 transition-all">
               Explore AI Services <FiArrowRight size={14} />
             </Link>
           </div>
@@ -64,8 +61,6 @@ export default function SmartTechSection() {
               <Link
                 key={card.href}
                 href={card.href}
-                prefetch={true}
-                onMouseEnter={() => router.prefetch(card.href)}
                 className={`bg-white rounded-2xl p-6 border border-gray-200 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 group ${card.color}`}
               >
                 <div className="text-3xl mb-3" role="img" aria-label={card.emojiLabel}>{card.emoji}</div>

@@ -1,7 +1,4 @@
-"use client";
-
-import React from "react";
-import Link from "next/link";
+import type { ReactNode } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -12,12 +9,12 @@ export interface FeatureItem {
 }
 
 export interface IndustryItem {
-  icon: React.ReactNode;
+  icon: ReactNode;
   title: string;
 }
 
 export interface TechItem {
-  icon: React.ReactNode;
+  icon: ReactNode;
   name: string;
 }
 
