@@ -88,7 +88,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-extrabold mb-8">Contact Information</h2>
                 {[
                   { Icon:FiMail,   label:"Email",    val:"info@pixelwind.in" },
-                  { Icon:FiPhone,  label:"Phone",    val:"+91 98765 43210" },
+                  { Icon:FiPhone,  label:"Phone",    val:"+91 93989 29970" },
                   { Icon:FiMapPin, label:"Location", val:"Andhra Pradesh, India" },
                   { Icon:FiClock,  label:"Hours",    val:"Mon–Sat, 9am–7pm IST" },
                 ].map(({ Icon, label, val }) => (

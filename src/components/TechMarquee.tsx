@@ -40,7 +40,7 @@ export default function TechMarquee() {
       <div className="max-w-7xl mx-auto px-6 mb-10">
         <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Our Tech Stack</p>
         <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3">
-          Technologies That: <span className="text-green-600">Drive Speed,<br />Scale, and Innovation</span>
+          Technologies That: <span className="text-blue-600">Drive Speed,<br />Scale, and Innovation</span>
         </h2>
         <p className="text-gray-500 text-sm max-w-xl leading-relaxed">
           Our stack covers cutting-edge frontend frameworks, robust backend systems, cloud platforms, and AI-driven tools.
